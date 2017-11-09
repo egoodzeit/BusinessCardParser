@@ -8,7 +8,7 @@ You will need Maven and at least Java 8 to compile and install the BusinessCardP
 
 ### Installing
 
-Install using Maven this will create an executable jar with the dependencies.  Note, the jar will be large, around 375mb.  This is due to the inclusiong of the Stanford CoreNLP library and models.
+Install using Maven.  This will create an executable jar with the dependencies.  Note, the jar will be large - around 375mb.  This is due to the inclusion of the Stanford CoreNLP library and models.
 
 ```
 mvn clean install
