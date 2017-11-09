@@ -36,6 +36,28 @@ Unit tests can be run with the following command:
 mvn test
 ```
 
+Example test files are found in tests/resources/examples.
+
+### Using BusinessCardParser
+
+```java
+BusinessCardParser parser = BusinessCardParserFactory.create();
+
+/*
+* document is the string representation of business card, e.g.; 
+*
+* John Smith
+* Software Developer
+* (555) 555-5555
+* jsmith@foo.bar
+*/
+ContactInfo contactInfo = parser.getContactInfo( document );
+
+String name = contactInfo.getName();
+String phone = contactInfo.getPhoneNumber();
+String email = contactInfo.getEmailAddress();
+```
+
 ### Built With
 
 * [Stanford CoreNLP](https://stanfordnlp.github.io/CoreNLP/) - The NLP library used.
