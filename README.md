@@ -53,9 +53,9 @@ BusinessCardParser parser = BusinessCardParserFactory.create();
 */
 ContactInfo contactInfo = parser.getContactInfo( document );
 
-String name = contactInfo.getName();
-String phone = contactInfo.getPhoneNumber();
-String email = contactInfo.getEmailAddress();
+String name = contactInfo.getName(); //"John Smith"
+String phone = contactInfo.getPhoneNumber(); //"5555555555"
+String email = contactInfo.getEmailAddress(); //"jsmith@foo.bar"
 ```
 
 ### Built With
